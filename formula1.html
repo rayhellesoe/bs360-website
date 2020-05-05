@@ -10,14 +10,14 @@
     
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800&amp;display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/f1styles.css">
         <link rel="icon" href="assets/home/logo_icon.png" type="image/png" sizes="16x16"> 
     </head>
 <body>
 
 <nav class="navbar navbar-expand-md navbar-dark">
     <div class="container">
-            <a href="f1index.html"><img src="assets/home/logo.png" style="width: 160px;"></a>
+            <a href="index.html"><img src="assets/home/logo.png" style="width: 160px;"></a>
         <!-- Placeholder navigation items -->
         <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbar" data-toggle="collapse" type="button">
             <span class="navbar-toggler-icon"></span>
@@ -70,7 +70,8 @@
             <p>A notification will be sent to you 5 minutes before the start of the RACE you select. Remember to move your phone to experience LIVE 360 horse racing.</p>
             <form action="/admin/submit.php" method="post" class="">
                 <input type="hidden" name="action" value="add_sub_from_website"/>
-                <input required type="text" name="add_name" class="form-control subscribe-email" id="phoneNumber" aria-describedby="phoneHelp" placeholder="Enter name" value="">
+                <input required type="text" name="add_name" class="form-control subscribe-email" id="name" aria-describedby="nameHelp" placeholder="Enter name" value="">
+                <input required type="text" name="add_number" class="form-control subscribe-email" id="phoneNumber" aria-describedby="phoneHelp" placeholder="Enter email" value="">
                 <input required type="text" name="add_email" class="form-control subscribe-email" id="email" aria-describedby="emailHelp" placeholder="Enter email" value="">
                 <input type="hidden" name="add_race_name"/>
                 <button type="submit" class="btn btn-primary subscribe-btn">Subscribe</button>
@@ -85,7 +86,7 @@
             <div class="row" style="margin-bottom: -15px;">
                 <div class="col-md-8 full-padding">
                     <span class="section-title mobile-break">World First Real-Time 360 in Race Experience</span>
-                    <p>The 360 experience is best viewed on a smartphone after you have downloaded the <a href="#" data-toggle="modal" data-target="#appStore"> YouTube APP</a>.</p>
+                    <p>The 360 experience is best viewed on a smartphone.</p>
                 </div>
                 <div class="col-md-4 full-padding">
                     <input type="text" class="form-control" id="searchQuery" name="searchQuery" onkeyup="filterSchedule()" placeholder="Search">
@@ -95,14 +96,14 @@
 
             <div class="row" style="margin-bottom: 0;">
                 <div class="col-md-12 full-padding">
-                    <span style="font-weight: 800; font-size: 18px; color:#ff7403;">Race Schedule</span> - For the best 360 experience, we recommend viewing on a smartphone
+                    <span style="font-weight: 800; font-size: 18px; color:#e10600;">Race Schedule</span> - For the best 360 experience, we recommend viewing on a smartphone
                 </div>
             </div>
 
             <a class="row schedule-table" 
                 data-toggle="modal" 
                 data-target="#liveStreamOptions"
-                data-threesixty-race="#"
+                data-threesixty-race="f1video.html"
                 data-youtube-race="#">
                 <div class="col-md-3 remove-padding image-column">
                     <img src="assets/home/f1image1.jpg" alt="" class="img-obj-fit">
@@ -233,8 +234,8 @@
             <div class="modal-body">
                 <div class="row">
                     <div class="col-md-12">
-                        <h4 class="alert-heading" style="max-width: 370px;display: inline-block;">WORLD FIRST REAL-TIME in RACE EXPERIENCE</h4>
-                        <p>The 360 experience is best viewed on a smartphone after you have downloaded the YouTube APP.</p>
+                        <h4 class="alert-heading" style="max-width: 370px;display: inline-block;">World First Real-Time 360 in Race Experience</h4>
+                        <p>The 360 experience is best viewed on a smartphone.</p>
                             <a id="threesixty-video" href="" target="_blank">
                                 <img src="assets/home/threesixty-panel.png" alt="BestSeat360 Icon" style="padding: 5px;">
                             </a>

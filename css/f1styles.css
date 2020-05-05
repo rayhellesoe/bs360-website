@@ -14,7 +14,7 @@ body {
 
 a {
 
-    color: #ff7403;
+    color: #e10600;
 
 }
 
@@ -22,7 +22,7 @@ a {
 
 a:hover, a:active, a:focus {
 
-    color: #bf5702;
+    color: #aa0500;
 
     text-decoration: none;
 
@@ -52,7 +52,7 @@ iframe {
 
     height: 45px;
 
-    background:#fe7302;
+    background:#e10600;
 
     display: inline-block;
 
@@ -92,7 +92,7 @@ iframe {
 
     text-align: center;
 
-    color: #ff7403;
+    color: #e10600;
 
     margin-bottom: 15px;
 
@@ -162,9 +162,9 @@ a.schedule-table {
 
     font-weight: 800;
 
-    color: #800080;
+    color: #e10600;
 
-    background: linear-gradient(to right, #bf5702 0%, #ff7403 100%);
+    background: linear-gradient(to right, #e10600 0%, #e10600 100%);
 
 	-webkit-background-clip: text;
 
@@ -282,7 +282,7 @@ a.schedule-table {
 
 .hover{
 
-    background-color:#ff7403;
+    background-color:#e10600;
 
 }
 
@@ -300,7 +300,7 @@ a.schedule-table {
 
     font-weight: 800;
 
-    color: #ff7403;
+    color: #e10600;
 
 }
 
@@ -326,7 +326,7 @@ a.schedule-table {
 
 .subscribe-email {
 
-    width: 37%;
+    width: 24%;
 
     display: inline;
 
@@ -348,7 +348,7 @@ a.schedule-table {
 
     margin-top: -4px;
 
-    border: 2px solid #ff7403;
+    border: 2px solid #e10600;
 
     border-radius:3px;
 
@@ -366,9 +366,9 @@ a.schedule-table {
 
 .login-btn:hover {
 
-    border: 2px solid #ff7403;
+    border: 2px solid #e10600;
 
-    background-color: #ff7403;
+    background-color: #e10600;
 
 }
 
@@ -422,7 +422,7 @@ a.schedule-table {
 
     border: none;
 
-    background-color: #ff7403;
+    background-color: #e10600;
 
 }
 
@@ -430,7 +430,7 @@ a.schedule-table {
 
 .subscribe-btn:hover {
 
-    background-color: #bf5702;
+    background-color: #aa0500;
 
 }
 
@@ -470,7 +470,7 @@ a.schedule-table {
 
     border: none;
 
-    background-color: #ff7403;
+    background-color: #e10600;
 
 }
 
@@ -478,7 +478,7 @@ a.schedule-table {
 
 .login-form-btn:hover {
 
-    background-color: #bf5702;
+    background-color: #aa0500;
 
 }
 
@@ -508,7 +508,7 @@ a.schedule-table {
 
     margin-left: 10px;
 
-    color: #ff7403;
+    color: #e10600;
 
 }
 
@@ -546,9 +546,9 @@ a.schedule-table {
 
     border: 2px solid;
 
-    border-color: #ff7403;
+    border-color: #e10600;
 
-    color: #ff7403;
+    color: #e10600;
 
 }
 
@@ -590,9 +590,9 @@ a.schedule-table {
 
     border: 2px solid;
 
-    border-color: #ff7403;
+    border-color: #e10600;
 
-    color: #ff7403;
+    color: #e10600;
 
 }
 
@@ -634,9 +634,9 @@ a.schedule-table {
 
     border: 2px solid;
 
-    border-color: #ff7403;
+    border-color: #e10600;
 
-    color: #ff7403;
+    color: #e10600;
 
 }
 
@@ -678,9 +678,9 @@ a.schedule-table {
 
     border: 2px solid;
 
-    border-color: #ff7403;
+    border-color: #e10600;
 
-    color: #ff7403;
+    color: #e10600;
 
 }
 
@@ -710,9 +710,9 @@ a.schedule-table {
 
 .btn-primary:not(:disabled):not(.disabled):active {
 
-    background-color: #bf5702;
+    background-color: #aa0500;
 
-    border-color: #bf5702;
+    border-color: #aa0500;
 
 }
 
@@ -776,7 +776,7 @@ video {
 
     font-weight: 800;
 
-    color: #ff7403 !important;
+    color: #e10600 !important;
 
 }
 
@@ -1086,7 +1086,7 @@ nav {
 }
 
 .btn-send{
-    background: #ff7403;
+    background: #e10600;
     color: #fff;
     border:none;
     padding: 8px 25px;
@@ -1094,7 +1094,7 @@ nav {
 }
 
 .btn-send:hover, .btn-send:focus{
-    background: #bf5702;
+    background: #aa0500;
     color: #fff;
 }
 
