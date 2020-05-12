@@ -755,19 +755,15 @@ a.schedule-table {
 
 
 video {
-
     position: fixed;
-
-    top: 0;
-
+    top: 50%;
+    left: 50%;
     min-width: 100%;
-
+    min-height: 100%;
+    width: auto;
     height: auto;
-
-    z-index: -1;
-
-    max-height: 114%;
-
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 
