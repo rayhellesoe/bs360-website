@@ -18,3 +18,12 @@ $(".config-ui").click(e => {
     $(".config-menu").hide();
     $(".main-grid").show();
 })
+
+$(".pip-video").click(e => {
+    if ($(".pip-video").hasClass("pip-full")) {
+        $(".pip-video").removeClass("pip-full");
+        return;
+    } else {
+        $(".pip-video").addClass("pip-full");
+    }
+})
