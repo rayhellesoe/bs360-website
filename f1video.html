@@ -19,8 +19,41 @@
 
     <body>
         <main>
-            <img src="assets/f1video-ui.png" alt="F1 UI" style="width: 100%; position: absolute;">
-            <video src="assets/f1video.mp4" poster="/html/assets/home/poster.png" autoplay loop muted playsinline></video>
+            <div class="config-menu">
+                <img class="config-ui" src="assets/f1video-ui-config.png" alt="Config UI Mockup">
+            </div>
+            <div class="main-grid">
+                <div class="left-options">
+                    <img class="menu-icon" alt="Menu Icon" src="assets/hud/menu-icon.png">
+                    <ul class="drivers">
+                        <img class="driver-name" id="lhamilton" src="assets/hud/drivers/lhamilton-active.png" alt="Lewis Hamilton">
+                        <img class="driver-name" id="svettel" src="assets/hud/drivers/svettel.png" alt="Sebastian Vettel">
+                        <img class="driver-name" id="kraikkonen" src="assets/hud/drivers/kraikkonen.png" alt="Kimi Raikkonen">
+                        <img class="driver-name" id="dricciardo" src="assets/hud/drivers/dricciardo.png" alt="Daniel Ricciardo">
+                        <img class="driver-name" id="falonso" src="assets/hud/drivers/falonso.png" alt="Fernando Alonso">
+                    </ul>
+                </div>
+                <div class="center-options">
+                    <img class="track-info" alt="Track Info" src="assets/hud/track-info.png">
+                </div>
+                <div class="right-options">
+                    <video class="pip-video" src="assets/pip-video.mp4" poster="/html/assets/home/poster.png" autoplay loop muted playsinline></video>
+                    <div class="track-and-stats">
+                        <img class="race-stats" src="assets/hud/stats.png" alt="Race Stats and Map">
+                        <!-- <div>
+                            <span class="stat-title">SPEED</span>
+                            <span class="stat-number">236</span><span class="stat-metric">KM</span>
+                        </div>
+                        <div>
+                            <span class="stat-title">DISTANCE</span>
+                            <span class="stat-number">98</span><span class="stat-metric">KM</span>
+                        </div>
+                        <img class="track" alt="Track Map" src="assets/hud/track.png"> -->
+                    </div>
+                    <img class="f1-logo" alt="F1TV Logo" src="assets/hud/f1-tv.png">
+                </div>
+            </div>
+            <video class="main-video" src="assets/hud/drivers/lhamilton.mp4" poster="/html/assets/home/poster.png" autoplay loop muted playsinline></video>
         </main>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -30,6 +63,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
             integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
             crossorigin="anonymous"></script>
-        <script src="js/main.js"></script>
+            <script src="js/main.js"></script>
+            <script src="js/f1switch.js"></script>
     </body>
 </html>
