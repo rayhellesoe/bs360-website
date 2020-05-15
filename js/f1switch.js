@@ -14,9 +14,33 @@ $(".menu-icon").click(e => {
     $(".config-menu").show();
 })
 
-$(".config-ui").click(e => {
+// TODO: Update to use a cleaner method of switching images
+
+$("#step1").click(e => {
+    $(".config-ui").hide();
+    $("#step2").show();
+})
+
+$("#step2").click(e => {
+    $(".config-ui").hide();
+    $("#step3").show();
+})
+
+$("#step3").click(e => {
+    $(".config-ui").hide();
+    $("#step4").show();
+})
+
+$("#step4").click(e => {
+    $(".config-ui").hide();
+    $("#step5").show();
+})
+
+$("#close-menu").click(e => {
+    $(".config-ui").hide();
     $(".config-menu").hide();
     $(".main-grid").show();
+    $("#step1").show();
 })
 
 $(".pip-video").click(e => {
