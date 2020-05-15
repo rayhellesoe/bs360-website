@@ -20,7 +20,20 @@
     <body>
         <main>
             <div class="config-menu">
-                <img class="config-ui" src="assets/f1video-ui-config.png" alt="Config UI Mockup">
+                <span id="close-menu" 
+                    style="
+                    width: 120px;
+                    height: 100px;
+                    /* background: green; */
+                    z-index: 10000;
+                    display: block;
+                    position: absolute;
+                "></span>
+                <img class="config-ui" id="step1" src="assets/config-1.png" alt="Config UI Mockup">
+                <img class="config-ui" id="step2" src="assets/config-2.png" alt="Config UI Mockup" style="display:none;">
+                <img class="config-ui" id="step3" src="assets/config-3.png" alt="Config UI Mockup" style="display:none;">
+                <img class="config-ui" id="step4" src="assets/config-4.png" alt="Config UI Mockup" style="display:none;">
+                <img class="config-ui" id="step5" src="assets/config-5.png" alt="Config UI Mockup" style="display:none;">
             </div>
             <div class="main-grid">
                 <div class="left-options">
@@ -51,7 +64,7 @@
                         </div>
                         <img class="track" alt="Track Map" src="assets/hud/track.png"> -->
                     </div>
-                    <img class="f1-logo" alt="F1TV Logo" src="assets/hud/f1-tv.png">
+                    <!-- <img class="f1-logo" alt="F1TV Logo" src="assets/hud/f1-tv.png"> -->
                 </div>
             </div>
             <video class="main-video" src="assets/hud/drivers/lhamilton.mp4" poster="/html/assets/home/poster.png" autoplay loop muted playsinline></video>
