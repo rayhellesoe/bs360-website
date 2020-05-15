@@ -397,6 +397,14 @@ nav {
     .image-column {
         height: 154px;
     }
+
+    .sbc-mobile {
+        display: inline-block !important;
+    }
+
+    .sbc-desktop {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 765px) {
@@ -407,7 +415,7 @@ nav {
     }
 
     .display-3 {
-        font-size: 3.25rem;
+        font-size: 2.5rem;
     }
 
     .subscribe-email {
@@ -424,14 +432,6 @@ nav {
         display: inline;
         height: 38px;
         margin-top: 5px;
-    }
-
-    .sbc-mobile {
-        display: inline-block !important;
-    }
-
-    .sbc-desktop {
-        display: none;
     }
 
     .book-btn {
@@ -554,7 +554,8 @@ nav {
 
     .transformative-message {
         position: inherit;
-        margin-top:5px;
+        margin-top:10px;
+        display: inline-block;
     }
 
     .smartmedia-message {

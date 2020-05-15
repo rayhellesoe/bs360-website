@@ -14,257 +14,282 @@
         <link rel="icon" href="assets/home/logo_icon.png" type="image/png" sizes="16x16"> 
     </head>
 <body>
-
-<nav class="navbar navbar-expand-md navbar-dark">
-    <div class="container">
-            <a href="index.html"><img src="assets/home/logo.png" style="width: 160px;"></a>
-        <!-- Placeholder navigation items -->
-        <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbar" data-toggle="collapse" type="button">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbar" style="margin-left: 7px;">
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Horses</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="home.html">New Zealand</a>
-                        <a class="dropdown-item disabled" href="javascript:void(0)">France</a>
-                        <a class="dropdown-item disabled" href="javascript:void(0)">Australia</a>
-                        <a class="dropdown-item disabled" href="javascript:void(0)">United States</a>
-                        <a class="dropdown-item disabled" href="javascript:void(0)">Sweden</a>
-                        <a class="dropdown-item disabled" href="javascript:void(0)">Canada</a>
-                        <a class="dropdown-item disabled" href="javascript:void(0)">Finland</a>
-                        <a class="dropdown-item disabled" href="javascript:void(0)">Norway</a>
-                        <a class="dropdown-item disabled" href="javascript:void(0)">Germany</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link active dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Motorsport</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="javascript:void(0)">Formula 1</a>
-                        <a class="dropdown-item disabled" href="javascript:void(0)">NASCAR</a>
-                        <a class="dropdown-item disabled" href="javascript:void(0)">Moto GP</a>
-                        <a class="dropdown-item disabled" href="javascript:void(0)">INDYCAR</a>
-                        <a class="dropdown-item disabled" href="javascript:void(0)">Rally Cross</a>
-                        <a class="dropdown-item disabled" href="javascript:void(0)">Moto Cross</a>
-                        <a class="dropdown-item disabled" href="javascript:void(0)">Monster Jam</a>
-                        <a class="dropdown-item disabled" href="javascript:void(0)">Drag Racing</a>
-                        <a class="dropdown-item disabled" href="javascript:void(0)">WRC</a>
-                        <a class="dropdown-item disabled" href="javascript:void(0)">V8 Super Cars</a>
-                    </div>
-                </li>
-                <li class="nav-item"><a class="nav-link disabled" href="javascript:void(0)">Action Sports</a></li>
-                <li class="nav-item"><a class="nav-link disabled" href="javascript:void(0)">Cricket</a></li>
-                <li class="nav-item"><a class="nav-link disabled" href="javascript:void(0)">Entertainment</a></li>
-                    
-                <li class="nav-item sbc-mobile"><a class="nav-link" href="contact.html">CONTACT US</a></li>
-            </ul>
-        </div>
+    <div class="config-menu">
+        <span id="close-menu" 
+            style="
+            width: 120px;
+            height: 100px;
+            /* background: green; */
+            z-index: 10000;
+            display: block;
+            position: absolute;
+        "></span>
+        <img class="config-ui" id="step1" src="assets/config-1.png" alt="Config UI Mockup">
+        <img class="config-ui" id="step2" src="assets/config-2.png" alt="Config UI Mockup" style="display:none;">
+        <img class="config-ui" id="step3" src="assets/config-3.png" alt="Config UI Mockup" style="display:none;">
+        <img class="config-ui" id="step4" src="assets/config-4.png" alt="Config UI Mockup" style="display:none;">
+        <img class="config-ui" id="step5" src="assets/config-5.png" alt="Config UI Mockup" style="display:none;">
     </div>
-</nav>
-
-<main>
-    <div class="container" style="padding-top: 15px;">
-        <!-- Subscribe to email news letter -->
-        <div class="alert alert-info" role="alert" style="display:none;">
-            <h4 class="alert-heading">Let us take you into the action</h4>
-            <p>A notification will be sent to you 5 minutes before the race starts. Remember to move your phone and look around to experience LIVE 360 motor racing.</p>
-            <form action="/admin/submit.php" method="post" class="">
-                <input type="hidden" name="action" value="add_sub_from_website"/>
-                <input required type="text" name="add_name" class="form-control subscribe-email" id="name" aria-describedby="nameHelp" placeholder="Enter name" value="">
-                <input required type="text" name="add_number" class="form-control subscribe-email" id="phoneNumber" aria-describedby="phoneHelp" placeholder="Enter mobile number" value="">
-                <input required type="text" name="add_email" class="form-control subscribe-email" id="email" aria-describedby="emailHelp" placeholder="Enter email" value="">
-                <input type="hidden" name="add_race_name"/>
-                <button type="submit" class="btn btn-primary subscribe-btn">Subscribe</button>
-            </form>
-            <!-- Button to close email subscription alert -->
-            <button type="button" class="close close-icon sbc-close">
-                <span aria-hidden="true">&times;</span>
+    <div id="main-section">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+                <a href="index.html"><img src="assets/home/logo.png" style="width: 160px;"></a>
+            <!-- Placeholder navigation items -->
+            <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbar" data-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
             </button>
-        </div>
-
-        <div class="container remove-padding schedule-content upcoming-races">
-            <div class="row" style="margin-bottom: -15px;">
-                <div class="col-md-8 full-padding">
-                    <span class="section-title mobile-break">World First LIVE 360 in Race Experience</span>
-                    <p>The 360 experience is best viewed on a smartphone connected to a smart TV.</p>
-                </div>
-                <div class="col-md-4 full-padding">
-                    <input type="text" class="form-control" id="searchQuery" name="searchQuery" onkeyup="filterSchedule()" placeholder="Search">
-                </div>
+            <div class="collapse navbar-collapse" id="navbar" style="margin-left: 7px;">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Horses</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="home.html">New Zealand</a>
+                            <a class="dropdown-item disabled" href="javascript:void(0)">France</a>
+                            <a class="dropdown-item disabled" href="javascript:void(0)">Australia</a>
+                            <a class="dropdown-item disabled" href="javascript:void(0)">United States</a>
+                            <a class="dropdown-item disabled" href="javascript:void(0)">Sweden</a>
+                            <a class="dropdown-item disabled" href="javascript:void(0)">Canada</a>
+                            <a class="dropdown-item disabled" href="javascript:void(0)">Finland</a>
+                            <a class="dropdown-item disabled" href="javascript:void(0)">Norway</a>
+                            <a class="dropdown-item disabled" href="javascript:void(0)">Germany</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Motorsport</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="javascript:void(0)">Formula 1</a>
+                            <a class="dropdown-item disabled" href="javascript:void(0)">NASCAR</a>
+                            <a class="dropdown-item disabled" href="javascript:void(0)">Moto GP</a>
+                            <a class="dropdown-item disabled" href="javascript:void(0)">INDYCAR</a>
+                            <a class="dropdown-item disabled" href="javascript:void(0)">Rally Cross</a>
+                            <a class="dropdown-item disabled" href="javascript:void(0)">Moto Cross</a>
+                            <a class="dropdown-item disabled" href="javascript:void(0)">Monster Jam</a>
+                            <a class="dropdown-item disabled" href="javascript:void(0)">Drag Racing</a>
+                            <a class="dropdown-item disabled" href="javascript:void(0)">WRC</a>
+                            <a class="dropdown-item disabled" href="javascript:void(0)">V8 Super Cars</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link disabled" href="javascript:void(0)">Action Sports</a></li>
+                    <li class="nav-item"><a class="nav-link disabled" href="javascript:void(0)">Cricket</a></li>
+                    <li class="nav-item"><a class="nav-link disabled" href="javascript:void(0)">Entertainment</a></li>
+                        
+                    <li class="nav-item sbc-mobile"><a class="nav-link" href="#">Subscribe</a></li>
+                    <li class="nav-item sbc-mobile"><a class="nav-link" href="#">Login</a></li>
+                </ul>
             </div>
-
-
-            <div class="row" style="margin-bottom: 0;">
-                <div class="col-md-12 full-padding">
-                    <span style="font-weight: 800; font-size: 18px; color:#e10600;">Race Schedule</span>
-                </div>
-            </div>
-
-            <a class="row schedule-table" 
-                data-target="#liveStreamOptions"
-                href="f1video.html"
-                data-youtube-race="#">
-                <div class="col-md-3 remove-padding image-column">
-                    <img src="assets/home/f1image1.jpg" alt="" class="img-obj-fit">
-                </div>
-                <div class="col-md-9 full-padding">
-                    <div class="home-title row">
-                        <div class="col-md-8 race-title"><span class="bold-title">360 Qualifying</span></div>
-                        <div class="col-md-4">
-                            <button type="submit" class="btn btn-primary livenow-btn" data-race-name="QUALIFYING">
-                                Live Now
-                            </button>
-                        </div>
-                    </div>
-                    <div class="row mb-0">
-                        <div class="col-md-8">
-                            <div class="home-description">Formula 1 Australian Grand Prix 2020</div>
-                            <div class="-home-location">Albert Park Circuit</div>
-                        </div>
-                        <div class="col-md-4  home-date-section">
-                            <div class="home-countdown">2nd May 2020</div> <!-- Date -->
-                            <div class="home-date">1:00 PM</div> <!-- Time -->
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <a class="row schedule-table" href="#"> <!-- Race link -->
-                <div class="col-md-3 remove-padding image-column">
-                    <img src="assets/home/f1image2.jpg" alt="" class="img-obj-fit"> <!-- Thumbnail image -->
-                </div>
-                <div class="col-md-9 full-padding">
-                    <div class="home-title row">
-                        <div class="col-md-8 race-title"><span class="bold-title">360 Race</span></div> <!-- Race title -->
-                        <div class="col-md-4">
-                        <span class="d-inline-block" tabindex="0" style="width: 100%;">
-                            <button type="submit" class="btn btn-primary book-btn">Book Now</button> <!-- To disable, add race-unavailable class -->
-                        </span>
-                        </div>
-                    </div>
-                    <div class="row mb-0">
-                        <div class="col-md-8">
-                            <div class="home-description">Formula 1 Australian Grand Prix 2020</div>
-                            <div class="-home-location">Albert Park Circuit</div>
-                        </div>
-                        <div class="col-md-4  home-date-section">
-                            <div class="home-countdown">3rd May 2020</div> <!-- Date -->
-                            <div class="home-date">1:10 PM</div> <!-- Time -->
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <a class="row schedule-table" 
-                data-target="#liveStreamOptions"
-                href="f1video-on-demand.html"
-                data-youtube-race="#">
-                <div class="col-md-3 remove-padding image-column">
-                    <img src="assets/home/f1image3.jpg" alt="" class="img-obj-fit">
-                </div>
-                <div class="col-md-9 full-padding">
-                    <div class="home-title row">
-                        <div class="col-md-8 race-title"><span class="bold-title">360 Practice 1</span></div>
-                        <div class="col-md-4">
-                            <button type="submit" class="btn btn-primary watch-btn" data-race-name="RACE 9 - LIVAMOL WITH BIOWORMA MOBILE PACE">
-                                On-Demand
-                            </button>
-                        </div>
-                    </div>
-                    <div class="row mb-0">
-                        <div class="col-md-8">
-                            <div class="home-description">Formula 1 Australian Grand Prix 2020</div>
-                            <div class="-home-location">Albert Park Circuit</div>
-                        </div>
-                        <div class="col-md-4  home-date-section">
-                            <div class="home-countdown">1st May 2020</div>
-                            <div class="home-date">Real-time 360 Racing</div>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <div class="row noSearchResults full-padding">
-                <div class="noSearchResultsContent">no search results found</div>                    
+            <div class="sbc-desktop">
+                <button type="submit" class="btn btn-primary login-btn" style="margin-top: -1px;">Login</button>
+                <button type="submit" class="btn btn-primary subscribe-btn sbc-open" style="width:120px; margin-top: -1px; position: absolute; top: 8px; right: 155px;">Subscribe</button> 
             </div>
         </div>
-    </div>
-</main>
+    </nav>
 
-<div class="modal fade" id="watchModal" tabindex="-1" role="dialog" aria-labelledby="watchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-        <div class="modal-body">
-            <iframe id="race-video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-        </div>
-    </div>
-</div>
+    <main>
+        <div class="container" style="padding-top: 15px;">
+            <!-- Subscribe to email news letter -->
+            <div class="alert alert-info" role="alert" style="display:none;">
+                <h4 class="alert-heading">Let us take you into the action</h4>
+                <p>A notification will be sent to you 5 minutes before the race starts. Remember to move your phone and look around to experience LIVE 360 motor racing.</p>
+                <form action="/admin/submit.php" method="post" class="">
+                    <input type="hidden" name="action" value="add_sub_from_website"/>
+                    <input required type="text" name="add_name" class="form-control subscribe-email" id="name" aria-describedby="nameHelp" placeholder="Enter name" value="">
+                    <input required type="text" name="add_number" class="form-control subscribe-email" id="phoneNumber" aria-describedby="phoneHelp" placeholder="Enter mobile number" value="">
+                    <input required type="text" name="add_email" class="form-control subscribe-email" id="email" aria-describedby="emailHelp" placeholder="Enter email" value="">
+                    <input type="hidden" name="add_race_name"/>
+                    <button type="submit" class="btn btn-primary subscribe-btn">Subscribe</button>
+                </form>
+                <!-- Button to close email subscription alert -->
+                <button type="button" class="close close-icon sbc-close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
 
-<!-- YouTube Apple and Google App-Store Modal -->
-<div id="appStore" class="modal fade" role="dialog" style="padding-top: 6vh;">
-    <div class="modal-dialog" style="text-align:center; color: #000;">
-        <div class="modal-content">
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h4 class="alert-heading" style="max-width: 370px;display: inline-block;">World First Real-Time 360 in Race Experience</h4>
+            <div class="container remove-padding schedule-content upcoming-races">
+                <div class="row" style="margin-bottom: -15px;">
+                    <div class="col-md-8 full-padding">
+                        <span class="section-title mobile-break">World First LIVE 360 in Race Experience</span>
                         <p>The 360 experience is best viewed on a smartphone connected to a smart TV.</p>
-                        <a href="https://play.google.com/store/apps/details?id=com.google.android.youtube" target="_blank"><img src="assets/home/google-appstore.png" alt="Google App Store" style="padding: 5px;"></a>
-                        <a href="https://apps.apple.com/us/app/youtube-watch-listen-stream/id544007664" target="_blank"><img src="assets/home/apple-appstore.png" alt="Apple App Store" style="padding: 5px;"></a>
+                    </div>
+                    <div class="col-md-4 full-padding">
+                        <input type="text" class="form-control" id="searchQuery" name="searchQuery" onkeyup="filterSchedule()" placeholder="Search">
                     </div>
                 </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+
+                <div class="row" style="margin-bottom: 0;">
+                    <div class="col-md-12 full-padding">
+                        <span style="font-weight: 800; font-size: 18px; color:#e10600;">Race Schedule</span>
+                        <p><span id="cam-config">Click here to select your preffered cameras.</span></p>
+                    </div>
+                </div>
+
+                <a class="row schedule-table" 
+                    data-target="#liveStreamOptions"
+                    href="f1video.html"
+                    data-youtube-race="#">
+                    <div class="col-md-3 remove-padding image-column">
+                        <img src="assets/home/f1image1.jpg" alt="" class="img-obj-fit">
+                    </div>
+                    <div class="col-md-9 full-padding">
+                        <div class="home-title row">
+                            <div class="col-md-8 race-title"><span class="bold-title">360 Qualifying</span></div>
+                            <div class="col-md-4">
+                                <button type="submit" class="btn btn-primary livenow-btn" data-race-name="QUALIFYING">
+                                    Live Now
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row mb-0">
+                            <div class="col-md-8">
+                                <div class="home-description">Formula 1 Australian Grand Prix 2020</div>
+                                <div class="-home-location">Albert Park Circuit</div>
+                            </div>
+                            <div class="col-md-4  home-date-section">
+                                <div class="home-countdown">2nd May 2020</div> <!-- Date -->
+                                <div class="home-date">1:00 PM</div> <!-- Time -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="row schedule-table" href="#"> <!-- Race link -->
+                    <div class="col-md-3 remove-padding image-column">
+                        <img src="assets/home/f1image2.jpg" alt="" class="img-obj-fit"> <!-- Thumbnail image -->
+                    </div>
+                    <div class="col-md-9 full-padding">
+                        <div class="home-title row">
+                            <div class="col-md-8 race-title"><span class="bold-title">360 Race</span></div> <!-- Race title -->
+                            <div class="col-md-4">
+                            <span class="d-inline-block" tabindex="0" style="width: 100%;">
+                                <button type="submit" class="btn btn-primary book-btn">Book Now</button> <!-- To disable, add race-unavailable class -->
+                            </span>
+                            </div>
+                        </div>
+                        <div class="row mb-0">
+                            <div class="col-md-8">
+                                <div class="home-description">Formula 1 Australian Grand Prix 2020</div>
+                                <div class="-home-location">Albert Park Circuit</div>
+                            </div>
+                            <div class="col-md-4  home-date-section">
+                                <div class="home-countdown">3rd May 2020</div> <!-- Date -->
+                                <div class="home-date">1:10 PM</div> <!-- Time -->
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="row schedule-table" 
+                    data-target="#liveStreamOptions"
+                    href="f1video-on-demand.html"
+                    data-youtube-race="#">
+                    <div class="col-md-3 remove-padding image-column">
+                        <img src="assets/home/f1image3.jpg" alt="" class="img-obj-fit">
+                    </div>
+                    <div class="col-md-9 full-padding">
+                        <div class="home-title row">
+                            <div class="col-md-8 race-title"><span class="bold-title">360 Practice 1</span></div>
+                            <div class="col-md-4">
+                                <button type="submit" class="btn btn-primary watch-btn" data-race-name="RACE 9 - LIVAMOL WITH BIOWORMA MOBILE PACE">
+                                    On-Demand
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row mb-0">
+                            <div class="col-md-8">
+                                <div class="home-description">Formula 1 Australian Grand Prix 2020</div>
+                                <div class="-home-location">Albert Park Circuit</div>
+                            </div>
+                            <div class="col-md-4  home-date-section">
+                                <div class="home-countdown">1st May 2020</div>
+                                <div class="home-date">Real-time 360 Racing</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <div class="row noSearchResults full-padding">
+                    <div class="noSearchResultsContent">no search results found</div>                    
+                </div>
             </div>
         </div>
-    </div>
-</div>
+    </main>
 
-<!-- View VOD Modal -->
-<div id="liveStreamOptions" class="modal fade" role="dialog" style="padding-top: 6vh;">
-    <div class="modal-dialog" style="text-align:center; color: #000;">
-        <div class="modal-content">
+    <div class="modal fade" id="watchModal" tabindex="-1" role="dialog" aria-labelledby="watchModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
             <div class="modal-body">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h4 class="alert-heading" style="max-width: 370px;display: inline-block;">World First Real-Time 360 in Race Experience</h4>
-                        <p>The 360 experience is best viewed on a smartphone.</p>
-                            <a id="threesixty-video" href="" target="_blank">
-                                <img src="assets/home/threesixty-panel.png" alt="BestSeat360 Icon" style="padding: 5px;">
-                            </a>
-                            <a id="youtube-video" href="" target="_blank">
-                                <img src="assets/home/youtube-panel.png" alt="YouTube Icon" style="padding: 5px;">
-                            </a>
-                    </div>
-                </div>
+                <iframe id="race-video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="footer-copyright text-center py-3">©2020 Copyright BESTSEAT360</a>
-</div>
+    <!-- YouTube Apple and Google App-Store Modal -->
+    <div id="appStore" class="modal fade" role="dialog" style="padding-top: 6vh;">
+        <div class="modal-dialog" style="text-align:center; color: #000;">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4 class="alert-heading" style="max-width: 370px;display: inline-block;">World First Real-Time 360 in Race Experience</h4>
+                            <p>The 360 experience is best viewed on a smartphone connected to a smart TV.</p>
+                            <a href="https://play.google.com/store/apps/details?id=com.google.android.youtube" target="_blank"><img src="assets/home/google-appstore.png" alt="Google App Store" style="padding: 5px;"></a>
+                            <a href="https://apps.apple.com/us/app/youtube-watch-listen-stream/id544007664" target="_blank"><img src="assets/home/apple-appstore.png" alt="Apple App Store" style="padding: 5px;"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<script src="js/main.js?d='13122019"></script>
-<script>
-    $$("button.book-btn").forEach(bookbtn => {
-        bookbtn.onclick = e => {
-            $_("input[name='add_race_name']").value = e.target.getAttribute("data-race-name");
-        }
-    });
-</script>
+    <!-- View VOD Modal -->
+    <div id="liveStreamOptions" class="modal fade" role="dialog" style="padding-top: 6vh;">
+        <div class="modal-dialog" style="text-align:center; color: #000;">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4 class="alert-heading" style="max-width: 370px;display: inline-block;">World First Real-Time 360 in Race Experience</h4>
+                            <p>The 360 experience is best viewed on a smartphone.</p>
+                                <a id="threesixty-video" href="" target="_blank">
+                                    <img src="assets/home/threesixty-panel.png" alt="BestSeat360 Icon" style="padding: 5px;">
+                                </a>
+                                <a id="youtube-video" href="" target="_blank">
+                                    <img src="assets/home/youtube-panel.png" alt="YouTube Icon" style="padding: 5px;">
+                                </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-copyright text-center py-3">©2020 Copyright BESTSEAT360</a>
+    </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/main.js?d='13122019"></script>
+    <script src="js/f1switch.js"></script>
+    <script>
+        $$("button.book-btn").forEach(bookbtn => {
+            bookbtn.onclick = e => {
+                $_("input[name='add_race_name']").value = e.target.getAttribute("data-race-name");
+            }
+        });
+    </script>
 
 </body>
 </html>

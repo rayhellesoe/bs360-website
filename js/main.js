@@ -64,7 +64,7 @@ function filterSchedule()
 // Show and hide subscription panel
 $(".sbc-open").on('click', function(){
     $(".alert").fadeIn(250);
-    $(".sbc-open").fadeOut(250);
+    // $(".sbc-open").fadeOut(250);
 })
 
 $(".book-btn").on('click', function(event){
