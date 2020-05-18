@@ -7,7 +7,7 @@ $(".driver-name").click(e => {
         }
     }
 
-    if (e.target.id === "lhamilton-vod" || e.target.id === "dricciardo-vod") {
+    if (e.target.id === "lhamilton-vod") {
         $(".main-video")[0].src = `${e.target.getAttribute("src").replace(".png", "")}-vod.mp4`
     } else {
         $(".main-video")[0].src = `${e.target.getAttribute("src").replace(".png", "")}.mp4`
