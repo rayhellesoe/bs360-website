@@ -43,6 +43,31 @@ $("#step4").click(e => {
     $("#step5").show();
 })
 
+$("#step5").click(e => {
+    $(".config-ui").hide();
+    $("#step6").show();
+})
+
+$("#step6").click(e => {
+    $(".config-ui").hide();
+    $("#step7").show();
+})
+
+$("#step7").click(e => {
+    $(".config-ui").hide();
+    $("#step8").show();
+})
+
+$("#step8").click(e => {
+    $(".config-ui").hide();
+    $("#step9").show();
+})
+
+$("#step9").click(e => {
+    $(".config-ui").hide();
+    $("#step10").show();
+})
+
 $("#close-menu").click(e => {
     $(".config-ui").hide();
     $(".config-menu").hide();
