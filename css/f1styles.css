@@ -699,10 +699,6 @@ nav {
 }
 
 .race-stats {
-    width: 10vw;
-}
-
-.race-stats-speedmap {
     width: auto;
     height: 55vh;
 }
