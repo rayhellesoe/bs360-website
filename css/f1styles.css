@@ -702,6 +702,11 @@ nav {
     width: 10vw;
 }
 
+.race-stats-speedmap {
+    width: auto;
+    height: 55vh;
+}
+
 .driver-name {
     display:block;
     margin-bottom: 4vh;

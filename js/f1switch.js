@@ -83,3 +83,7 @@ $(".pip-video").click(e => {
         $(".pip-video").addClass("pip-full");
     }
 })
+
+$(".race-stats").click(e => {
+    $(".race-stats").toggle();
+})
