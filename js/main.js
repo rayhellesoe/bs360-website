@@ -141,3 +141,21 @@ $(".more-races-link").on('click', function(event){
 $(".more-races-accordion").on('click', function(event){
     $('.collapse').collapse('toggle') 
 })
+
+$("#live-video").hover(
+    e => {
+        $(".live-video-thumb")[0].setAttribute("src", "assets/home/prev-live.gif")
+    },
+    e => {
+        $(".live-video-thumb")[0].setAttribute("src", "assets/home/f1image1.jpg")
+    }
+)
+
+$("#video-on-demand").hover(
+    e => {
+        $(".video-on-demand-thumb")[0].setAttribute("src", "assets/home/prev-vod.gif")
+    },
+    e => {
+        $(".video-on-demand-thumb")[0].setAttribute("src", "assets/home/f1image2.jpg")
+    }
+)

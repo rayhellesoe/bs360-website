@@ -10,7 +10,7 @@
     
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800&amp;display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/f1styles.css">
+        <link rel="stylesheet" href="css/f1styles.css?d='23520'">
         <link rel="icon" href="assets/home/logo_icon.png" type="image/png" sizes="16x16"> 
     </head>
 <body>
@@ -29,6 +29,11 @@
         <img class="config-ui" id="step3" src="assets/config-3.png" alt="Config UI Mockup" style="display:none;">
         <img class="config-ui" id="step4" src="assets/config-4.png" alt="Config UI Mockup" style="display:none;">
         <img class="config-ui" id="step5" src="assets/config-5.png" alt="Config UI Mockup" style="display:none;">
+        <img class="config-ui" id="step6" src="assets/config-6.png" alt="Config UI Mockup" style="display:none;">
+        <img class="config-ui" id="step7" src="assets/config-7.png" alt="Config UI Mockup" style="display:none;">
+        <img class="config-ui" id="step8" src="assets/config-8.png" alt="Config UI Mockup" style="display:none;">
+        <img class="config-ui" id="step9" src="assets/config-9.png" alt="Config UI Mockup" style="display:none;">
+        <img class="config-ui" id="step10" src="assets/config-10.png" alt="Config UI Mockup" style="display:none;">
     </div>
     <div id="main-section">
     <nav class="navbar navbar-expand-lg navbar-dark">
@@ -72,14 +77,11 @@
                     <li class="nav-item"><a class="nav-link disabled" href="javascript:void(0)">Action Sports</a></li>
                     <li class="nav-item"><a class="nav-link disabled" href="javascript:void(0)">Cricket</a></li>
                     <li class="nav-item"><a class="nav-link disabled" href="javascript:void(0)">Entertainment</a></li>
-                        
-                    <li class="nav-item sbc-mobile"><a class="nav-link" href="#">Subscribe</a></li>
-                    <li class="nav-item sbc-mobile"><a class="nav-link" href="#">Login</a></li>
                 </ul>
-            </div>
-            <div class="sbc-desktop">
-                <button type="submit" class="btn btn-primary login-btn" style="margin-top: -1px;">Login</button>
-                <button type="submit" class="btn btn-primary subscribe-btn sbc-open" style="width:120px; margin-top: -1px; position: absolute; top: 8px; right: 155px;">Subscribe</button> 
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="sub-btn sbc-open" href="#">Subscribe</a></li>
+                    <li class="nav-item"><a class="login-btn" href="javascript:void(0)">Login</a></li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -119,16 +121,17 @@
                 <div class="row" style="margin-bottom: 0;">
                     <div class="col-md-12 full-padding">
                         <span style="font-weight: 800; font-size: 18px; color:#e10600;">Race Schedule</span>
-                        <p><span id="cam-config">Click here to select your preffered cameras.</span></p>
+                        <p><span id="cam-config" style="cursor: pointer;">Click here to select your preffered cameras.</span></p>
                     </div>
                 </div>
 
                 <a class="row schedule-table" 
                     data-target="#liveStreamOptions"
                     href="f1video.html"
-                    data-youtube-race="#">
+                    data-youtube-race="#"
+                    id="live-video">
                     <div class="col-md-3 remove-padding image-column">
-                        <img src="assets/home/f1image1.jpg" alt="" class="img-obj-fit">
+                        <img src="assets/home/f1image1.jpg" alt="" class="img-obj-fit live-video-thumb">
                     </div>
                     <div class="col-md-9 full-padding">
                         <div class="home-title row">
@@ -181,9 +184,10 @@
                 <a class="row schedule-table" 
                     data-target="#liveStreamOptions"
                     href="f1video-on-demand.html"
-                    data-youtube-race="#">
+                    data-youtube-race="#"
+                    id="video-on-demand">
                     <div class="col-md-3 remove-padding image-column">
-                        <img src="assets/home/f1image3.jpg" alt="" class="img-obj-fit">
+                        <img src="assets/home/f1image3.jpg" alt="" class="img-obj-fit video-on-demand-thumb">
                     </div>
                     <div class="col-md-9 full-padding">
                         <div class="home-title row">
@@ -281,10 +285,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="js/main.js?d='13122019"></script>
-    <script src="js/f1switch.js"></script>
+    <script src="js/main.js?d='23520'"></script>
+    <script src="js/f1switch.js?d='23520'"></script>
     <script>
-        $$("button.book-btn").forEach(bookbtn => {
+        $("button.book-btn").forEach(bookbtn => {
             bookbtn.onclick = e => {
                 $_("input[name='add_race_name']").value = e.target.getAttribute("data-race-name");
             }

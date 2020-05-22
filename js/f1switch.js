@@ -14,6 +14,9 @@ $(".driver-name").click(e => {
     }
 
     e.target.src = e.target.getAttribute("src").replace(".png", "-active.png")
+
+    $('#driver-stats')[0].setAttribute("src", `assets/hud/stats-${e.target.id}.png`)
+    // console.log()
 })
 
 $("#cam-config").click(e => {
@@ -84,6 +87,6 @@ $(".pip-video").click(e => {
     }
 })
 
-$(".race-stats").click(e => {
-    $(".race-stats").toggle();
+$(".track-and-stats").click(e => {
+    $(".speedometer").toggle();
 })
