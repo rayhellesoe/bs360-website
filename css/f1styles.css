@@ -361,6 +361,18 @@ a.schedule-table {
     color: rgba(255,255,255, 0.9);
 }
 
+.back-btn {
+    margin-top: 6vh;
+    margin-left: 2vw;
+    opacity: .7;
+    width: 13.5%;
+    cursor: pointer;
+}
+
+.back-btn:hover, .back-btn:focus {
+    opacity: 1;
+}
+
 .btn-primary:not(:disabled):not(.disabled):active {
     background-color: #aa0500;
     border-color: #aa0500;
@@ -700,6 +712,12 @@ nav {
     margin-left: 2vw;
     width: 7%;
     min-width: 20px;
+    cursor: pointer;
+}
+
+.searchInput {
+    color: #ddd;
+    background-color: #242424;
 }
 
 .track-info {

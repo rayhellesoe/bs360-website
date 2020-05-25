@@ -156,6 +156,6 @@ $("#video-on-demand").hover(
         $(".video-on-demand-thumb")[0].setAttribute("src", "assets/home/prev-vod.gif")
     },
     e => {
-        $(".video-on-demand-thumb")[0].setAttribute("src", "assets/home/f1image2.jpg")
+        $(".video-on-demand-thumb")[0].setAttribute("src", "assets/home/f1image3.jpg")
     }
 )
