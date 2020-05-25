@@ -415,6 +415,17 @@ nav {
     text-overflow: ellipsis;
 }
 
+.select-cams-schedule {
+    padding: 15px 0px 0px 8px;
+    margin-bottom: 15px;
+}
+
+.searchInput {
+    color: #ddd !important;
+    background-color: #242424 !important;
+    margin-bottom: 0;
+}
+
 @media only screen and (max-width: 992px) {
     .image-column {
         height: 154px;
@@ -436,6 +447,14 @@ nav {
         white-space: inherit;
         overflow: hidden;
         text-overflow: ellipsis;
+    }
+
+    .select-cams-schedule {
+        padding: 15px 0px 0px 15px;
+    }
+
+    .searchInput {        
+        margin-bottom: 20px;
     }
 
     .display-3 {
@@ -713,11 +732,6 @@ nav {
     width: 7%;
     min-width: 20px;
     cursor: pointer;
-}
-
-.searchInput {
-    color: #ddd;
-    background-color: #242424;
 }
 
 .track-info {
