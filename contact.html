@@ -1,0 +1,128 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>BESTSEAT360 - Home</title>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
+        <link rel="stylesheet" href="/css/bestseat360_styles.css">
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+        <script src="/js/utilities.js"></script>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/f1styles.css?d='23520'">
+        <link rel="icon" href="assets/home/logo_icon.png" type="assets/home/png" sizes="16x16">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container" style="padding: 0px 6px;">
+                <a href="index.html"><img src="assets/home/logo.png" style="width: 160px;"></a>
+                <!-- <a class="navbar-brand mr-auto p-2" href="index.html">BESTSEAT360</a> -->
+                <!-- Placeholder navigation items -->
+                <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+                    data-target="#navbar" data-toggle="collapse" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar" style="margin-left: 7px;">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="horses.html">Horses</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="home.html">New Zealand</a> <!-- home.html -->
+                                <a class="dropdown-item disabled" href="#">France</a> <!-- frhome.html -->
+                                <a class="dropdown-item disabled" href="#">Australia</a>
+                                <a class="dropdown-item disabled" href="#">United States</a>
+                                <a class="dropdown-item disabled" href="#">Sweden</a>
+                                <a class="dropdown-item disabled" href="#">Canada</a>
+                                <a class="dropdown-item disabled" href="#">Finland</a>
+                                <a class="dropdown-item disabled" href="#">Norway</a>
+                                <a class="dropdown-item disabled" href="#">Germany</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                aria-expanded="false" href="#">Motorsport</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="formula1.html">Formula 1</a>
+                                <a class="dropdown-item disabled" href="#">NASCAR</a>
+                                <a class="dropdown-item disabled" href="#">Moto GP</a>
+                                <a class="dropdown-item disabled" href="#">INDYCAR</a>
+                                <a class="dropdown-item disabled" href="#">Rally Cross</a>
+                                <a class="dropdown-item disabled" href="#">Moto Cross</a>
+                                <a class="dropdown-item disabled" href="#">Monster Jam</a>
+                                <a class="dropdown-item disabled" href="#">Drag Racing</a>
+                                <a class="dropdown-item disabled" href="#">WRC</a>
+                                <a class="dropdown-item disabled" href="#">V8 Super Cars</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link disabled" href="#">Action Sports</a></li>
+                        <li class="nav-item"><a class="nav-link disabled" href="#">Cricket</a></li>
+                        <li class="nav-item"><a class="nav-link disabled" href="#">Entertainment</a></li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="sub-btn" href="javascript:void(0)">Contact</a></li>
+                        <li class="nav-item"><a class="login-btn" href="javascript:void(0)">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <div style="background: rgba(0,0,0,0.55); width: 100%; height: 100vh; padding-top: 35px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 offset-md-3" style="padding: 25px 30px;background: #fff;color: #000;border-radius: 3px;">        
+                            <span class="login-heading">Contact Us</span>
+                            <form action="submit.php" method="POST">
+                                <div class="form-group">
+                                    <label for="user_name">Name</label>
+                                    <input class="form-control login-form-input" type="text" name="user_name" id="user_name" placeholder="Your Name"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="user_email">Email</label>
+                                    <input class="form-control login-form-input" type="text" name="user_email" id="user_email" placeholder="your@email.com"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Message</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                                <button class="btn btn-primary login-form-btn" style="width:86px;">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <video class="main-video" src="assets/f1video.mp4" poster="/html/assets/home/poster.png" autoplay loop muted
+                playsinline></video>
+        </main>
+
+        <div class="modal fade" id="watchModal" tabindex="-1" role="dialog" aria-labelledby="watchModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <iframe id="race-video-new" width="560" height="315" src="https://www.youtube.com/embed/agumpDHniUw"
+                            frameborder="0" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+        <script src="js/main.js?d='23520'"></script>
+    </body>
+</html>

@@ -5,6 +5,10 @@ body {
     background-color:#000;
 }
 
+.display-3 {
+    font-size: 3.25rem;
+}
+
 a {
     color: #e10600;
 }
@@ -458,7 +462,7 @@ nav {
     }
 
     .display-3 {
-        font-size: 2.5rem;
+        font-size: 32px;
     }
 
     .subscribe-email {
@@ -552,7 +556,7 @@ nav {
     }
 
     .display-3 {
-        font-size: 40px;
+        font-size: 32px;
     }
 }
 
